@@ -19,7 +19,11 @@ Leveraged advanced scoring metrics such as BLOSUM62 to conduct biologically mean
 
 ## Key Findings
 Optimal k-mer size: K=6 struck the best balance between computational efficiency and model performance.
+
 Model performance: Logistic Regression and SVM models excelled in classification tasks, demonstrating strong predictive power.
+
 Deep learning potential: LSTM models effectively captured temporal patterns in DNA sequences, showcasing their applicability to biological sequence data.
+
 Evolutionary insights: Sequence alignment and similarity analysis revealed significant evolutionary relationships among species.
+
 This project highlights the power of combining traditional machine learning, deep learning, and advanced data visualization techniques to derive meaningful insights from biological data.
