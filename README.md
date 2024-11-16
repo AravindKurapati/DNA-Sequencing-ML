@@ -17,7 +17,7 @@ Conducted pairwise sequence similarity analysis using Jaccard similarity and dev
 Performed sequence alignment between human, chimpanzee, and dog DNA, identifying conserved genetic regions across species.
 Leveraged advanced scoring metrics such as BLOSUM62 to conduct biologically meaningful comparisons, offering deeper insights into evolutionary relationships.
 
-##Key Findings
+## Key Findings
 Optimal k-mer size: K=6 struck the best balance between computational efficiency and model performance.
 Model performance: Logistic Regression and SVM models excelled in classification tasks, demonstrating strong predictive power.
 Deep learning potential: LSTM models effectively captured temporal patterns in DNA sequences, showcasing their applicability to biological sequence data.
