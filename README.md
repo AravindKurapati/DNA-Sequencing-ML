@@ -50,7 +50,7 @@ GC content was visualized across species to analyze nucleotide composition diffe
 
 | Human | Chimpanzee | Dog |
 |-------|------------|-----|
-| ![](images/gc human.png) | ![](images/gc chimp.png) | ![](images/gc dog.png) |
+| ![](images/gc_human.png) | ![](images/gc_chimp.png) | ![](images/gc_dog.png) |
 
 ---
 
@@ -58,7 +58,7 @@ GC content was visualized across species to analyze nucleotide composition diffe
 
 Pairwise alignment of DNA sequences between species was performed to highlight conserved regions.
 
-![Alignment Heatmap](images/alignment_human_chimp.png)
+![Alignment Heatmap](images/alignment.png)
 
 > The alignment above reveals significant overlap in base pair patterns between human and chimpanzee DNA sequences (Alignment Score: 189).
 
@@ -68,7 +68,7 @@ Pairwise alignment of DNA sequences between species was performed to highlight c
 
 A position-wise similarity heatmap was generated for each species pair:
 
-![Similarity Heatmaps](images/species_similarity.png)
+![Similarity Heatmaps](images/simi.png)
 
 - **Human vs. Chimpanzee**: Highest similarity
 - **Human vs. Dog** and **Chimpanzee vs. Dog**: Lower similarity
