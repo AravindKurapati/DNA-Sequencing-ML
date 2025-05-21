@@ -68,7 +68,7 @@ Pairwise alignment of DNA sequences between species was performed to highlight c
 
 A position-wise similarity heatmap was generated for each species pair:
 
-![Similarity Heatmaps](images/simi.png)
+[Similarity Heatmaps](images/simi.png)
 
 - **Human vs. Chimpanzee**: Highest similarity
 - **Human vs. Dog** and **Chimpanzee vs. Dog**: Lower similarity
