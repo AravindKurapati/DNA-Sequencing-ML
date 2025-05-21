@@ -50,7 +50,7 @@ GC content was visualized across species to analyze nucleotide composition diffe
 
 | Human | Chimpanzee | Dog |
 |-------|------------|-----|
-| ![](images/gc_human.png) | ![](images/gc_chimpanzee.png) | ![](images/gc_dog.png) |
+| ![](images/gc human.png) | ![](images/gc chimp.png) | ![](images/gc dog.png) |
 
 ---
 
