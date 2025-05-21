@@ -1,29 +1,105 @@
 # DNA Sequence Analysis Using Machine Learning
-In this project, I explored DNA sequence analysis using a combination of machine learning and data visualization techniques. Below is a summary of the key components and accomplishments:
+
+This project explores the use of machine learning and deep learning techniques to classify DNA sequences and uncover evolutionary relationships between species. It was my **first project in bioinformatics**, and it helped me gain a foundational understanding of how to process biological sequences, extract meaningful features, and evaluate models on genomics data.
+
+---
+
+## Objectives
+
+- Encode DNA sequences using k-mers and analyze nucleotide composition (e.g., GC content)
+- Train machine learning models to classify sequences by species
+- Visualize sequence distributions and alignments across humans, chimpanzees, and dogs
+- Gain insights into cross-species genetic similarity using pairwise alignment and similarity heatmaps
+
+---
 
 ## Data Preprocessing
-Transformed raw DNA sequences into a machine-readable format using k-mers for feature extraction.
-Engineered meaningful features such as GC content to enhance the model's ability to capture genetic information.
 
-##Feature Engineering and Model Training
-Trained various machine learning models, including Logistic Regression, SVM, and Naive Bayes, using different k-mer sizes to optimize performance.
-Applied deep learning by training LSTM models to capture sequential dependencies and improve classification accuracy.
+- **Input**: Raw DNA sequences for Human, Chimpanzee, and Dog
+- **K-mer extraction**: Transformed sequences into numerical features using 4-mer, 6-mer, and 8-mer patterns
+- **GC content analysis**: Computed %GC for each sequence as a biologically relevant feature
 
-##Visualization and Insights
-Visualized nucleotide distributions and analyzed sequence length variability across human, chimpanzee, and dog DNA datasets.
-Conducted pairwise sequence similarity analysis using Jaccard similarity and developed alignment heatmaps to highlight critical regions of genetic similarity.
+---
 
-## Advanced Comparative Analysis
-Performed sequence alignment between human, chimpanzee, and dog DNA, identifying conserved genetic regions across species.
-Leveraged advanced scoring metrics such as BLOSUM62 to conduct biologically meaningful comparisons, offering deeper insights into evolutionary relationships.
+## Feature Engineering & Modeling
 
-## Key Findings
-Optimal k-mer size: K=6 struck the best balance between computational efficiency and model performance.
+- **Traditional ML models**:
+  - Logistic Regression, Support Vector Machine (SVM), and Naive Bayes
+- **Deep Learning model**:
+  - LSTM to capture sequential dependencies in DNA sequences
+- **Evaluation**:
+  - Accuracy scores across species and k-mer sizes
 
-Model performance: Logistic Regression and SVM models excelled in classification tasks, demonstrating strong predictive power.
+### Sample Results
 
-Deep learning potential: LSTM models effectively captured temporal patterns in DNA sequences, showcasing their applicability to biological sequence data.
+| Species     | K-mer | Logistic Regression | SVM  | LSTM |
+|-------------|-------|---------------------|------|------|
+| Human       | 6     | 0.935               | 0.884| 0.671|
+| Chimpanzee  | 4     | 0.932               | 0.902| 0.677|
+| Dog         | 4     | 0.762               | 0.744| 0.402|
 
-Evolutionary insights: Sequence alignment and similarity analysis revealed significant evolutionary relationships among species.
+> Logistic Regression and SVM consistently outperformed LSTM on this small dataset.
 
-This project highlights the power of combining traditional machine learning, deep learning, and advanced data visualization techniques to derive meaningful insights from biological data.
+---
+
+## Biological Insights
+
+### GC Content Distribution
+
+GC content was visualized across species to analyze nucleotide composition differences.
+
+| Human | Chimpanzee | Dog |
+|-------|------------|-----|
+| ![](images/gc_human.png) | ![](images/gc_chimpanzee.png) | ![](images/gc_dog.png) |
+
+---
+
+### Sequence Alignment
+
+Pairwise alignment of DNA sequences between species was performed to highlight conserved regions.
+
+![Alignment Heatmap](images/alignment_human_chimp.png)
+
+> The alignment above reveals significant overlap in base pair patterns between human and chimpanzee DNA sequences (Alignment Score: 189).
+
+---
+
+### Cross-Species Similarity
+
+A position-wise similarity heatmap was generated for each species pair:
+
+![Similarity Heatmaps](images/species_similarity.png)
+
+- **Human vs. Chimpanzee**: Highest similarity
+- **Human vs. Dog** and **Chimpanzee vs. Dog**: Lower similarity
+- Reflects expected evolutionary distances
+
+---
+
+## Key Learnings & Reflections
+
+- This project introduced me to **bioinformatics preprocessing**, **sequence encoding**, and **evolutionary insights**
+- **Traditional models like Logistic Regression and SVM** performed best for this task
+- **LSTM models struggled**, likely due to the small size and simplicity of the dataset
+- **Biological visualization** (GC content, alignments) enriched model interpretation
+- I became more comfortable with integrating ML techniques into biology-focused tasks
+
+---
+
+## Future Work
+
+- Use real-world biological datasets (e.g., NCBI GenBank, Ensembl)
+- Explore more complex architectures like Transformers (e.g., DNABERT)
+- Perform multi-class classification on gene function or chromosomal origin
+- Integrate biological databases and perform functional annotation of sequences
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python**, **Pandas**, **Scikit-learn**
+- **Matplotlib**, **Seaborn** for visualization
+- **TensorFlow/Keras** for LSTM modeling
+- **BioPython** for sequence alignment
+
+
